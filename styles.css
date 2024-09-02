@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.hamburger {
+    cursor: pointer;
+    margin-left: 40px;
+  }
+  
+  .bar {
+    width: 30px;
+    height: 5px;
+    background-color: rgb(255, 244, 244);
+    margin: 6px 0;
+    transition: 0.4s;
+    display: flex;
+  }
+  .hamburger:hover{
+    .bar:first-child { transform: translateY(0) rotate(20deg); }
+    .bar:last-child { transform: translateY(0) r; }
+  }
+
+.container{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)),url(images/wall.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-left: 7%;
+    padding-right: 7%;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 12%;
+    align-items: center;
+    display: flex;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left:70px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50% ;
+}
+h1{
+    color: white;
+    font-size: 100px;
+}
+p{
+    color: white;
+    font-size: 15px;
+    line-height: 15px;
+}
+button{
+    width: 180px;
+    background-color: white;
+    color: black;
+    border: 0;
+    border-radius: 20px;
+    padding: 12px 0px;
+    cursor: pointer;
+    font-size: 15px; 
+    outline: none;
+    margin-top: 30px;
+}
+h5{
+    color: white;
+    text-shadow: 0 0 3px black;
+}
+.car p{
+    color: rgb(212, 212, 212);
+    font-size: 13px;
+    line-height: 15px;
+    text-shadow: 0 0 3px black;
+}
+.car{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    margin: 10px 25px;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.car1{
+    background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)),url(images/toyota.jpg);
+}
+.car2{
+    background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)),url(images/bmw.jpg);
+}
+.car3{
+    background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)),url(images/maserati.jpg);
+}
+.car4{
+    background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)),url(images/BENZ.jpg);
+}
+.car:hover{
+    transform: translateY(-10px) ;
+}
+button:hover{
+    background-color: rgb(85, 85, 85);
+    color: white;
+}
+nav ul li a:hover{
+    color: rgb(122, 122, 122);
+}
